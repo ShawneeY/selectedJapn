@@ -1,0 +1,332 @@
+<!--#include file="partial_html/header.html" -->
+
+<div id="carousel-top" class="focus slide" style="height: 50px; width: 100%; position: fixed; background-color: #FF5A5F; z-index: 199999;">
+  <div style="float: left; top: 0px; background-color: #FF5A5F; height: 50px;">
+    <div style="color: #fff; margin-top: 6px;font-size: 1.8em;">
+      <a href="index.html" style="position: relative; z-index: 100;"> <img src="http://xianbei.cc/res/m/index/img/logo.png" alt="仙贝旅行" style="height: 1.5em;" id="imglogo"></a>
+    </div>
+  </div>
+  <div style="float: right; margin-right: 0.8em;">
+    <div style="color: #fff; margin-top: 12px;">
+      <a class="c" href="tel:4008131005">
+            <img src="http://xianbei.cc/res/m/index/img/dianhua.png" alt="电话" style="height: 1.5em;">
+              </a>&nbsp;&nbsp;
+      <img src="http://xianbei.cc/res/m/index/img/search.png" alt="查找" style="height: 1.8em;margin-top: -3px;" id="location_choose">
+    </div>
+  </div>
+</div>
+<div class="header-placeholder"></div>
+
+<!-- 轮播 -->
+<div style="height:20px;"></div>
+<div class="loop owl-carousel owl-theme ">
+  <div class="owl-item">
+    <a href="http://xianbei.cc/web/exploration/47" target="_blank">
+      <div class="item">
+        <img src="http://cdn.xianbei.cc/exploration/850_410_sbq.jpg" alt="">
+        <div class="title"></div>
+        <div class="description"></div>
+      </div>
+    </a>
+  </div>
+  <div class="owl-item ">
+    <a href="http://xianbei.cc/web/exploration/47" target="_blank">
+      <div class="item">
+        <img src="http://cdn.xianbei.cc/exploration/850_410_sbq.jpg" alt="">
+      </div>
+    </a>
+  </div>
+  <div class="owl-item ">
+    <a href="http://xianbei.cc/web/exploration/47" target="_blank">
+      <div class="item">
+        <img src="http://cdn.xianbei.cc/exploration/850_410_sbq.jpg" alt="">
+      </div>
+    </a>
+  </div>
+</div>
+<div class="clearfix"></div>
+<form id="searchForm" method="get" action="web/exploration/list">
+  <input type="hidden" id="type" name="type" value="accommodation">
+  <input type="hidden" id="cityId" name="cityId" value="">
+  <input type="hidden" id="categories" name="categories" value="">
+  <input type="hidden" id="orderBy" name="orderBy" value="ie.score desc">
+  <input type="hidden" id="page" name="page.pn" value="2">
+</form>
+<!-- 主内容区 -->
+<article class="main">
+  <div class="wrapper" style="margin-top:-5px">
+      <div class="main-nav-wrapper">
+          <nav>
+              <ul>
+                <li><a href="javascript:void(0)" id="shopping" data="shopping" class="icon-shopping-cart ">购物</a></li>
+                <li><a href="javascript:void(0)" id="home" data="accommodation" class="icon-home ">住宿</a></li>
+                <li><a href="javascript:void(0)" id="food" data="food" class="icon-food hover">美食</a></li>
+                <li><a href="javascript:void(0)" id="scenery" data="sites" class="icon-leaf ">景点</a></li>
+              </ul>
+          </nav>
+          <div class="corner corner-position4"></div>
+      </div>
+      <div class="select">
+          <i class="select-i fa fa-sort-down">
+          </i>
+          <select id="city_span" class="select-text">
+              <option value="all" selected="">全部地区</option>
+              <option value="2">东京</option>
+              <option value="7">大阪</option>
+              <option value="9">京都</option>
+              <option value="10">神户</option>
+              <option value="11">札幌</option>
+              <option value="12">小樽</option>
+              <option value="13">名古屋</option>
+              <option value="14">福冈</option>
+              <option value="15">沖縄県</option>
+          </select>
+      </div>
+      <div class="select">
+          <i class="select-i fa fa-sort-down">
+          </i>
+          <select id="categories_span" class="select-text">
+              <option value="all" selected="">全部类别</option>
+              <option value="21">居酒屋</option>
+              <option value="22">连锁快餐</option>
+              <option value="23">日本料理</option>
+              <option value="24">主题餐厅</option>
+              <option value="25">西餐正餐</option>
+              <option value="26">甜品咖啡店</option>
+              <option value="27">米其林3星</option>
+              <option value="28">米其林2星</option>
+              <option value="29">米其林1星</option>
+          </select>
+      </div>
+      <div class="select">
+          <i class="select-i fa fa-sort-down">
+          </i>
+          <select id="orderBy_span" class="select-text">
+          <option value="score" selected="">综合评价</option>
+              <option value="click">人气</option>
+              <option value="environment">环境</option>
+              <option value="service">服务</option>
+              <option value="perCapita">人均消费</option>
+              <option value="rankings">仙贝推荐</option>
+          </select>
+      </div>
+      <div class="clearfix"></div>
+  </div>
+  <article class="commodity">
+      <section class="commodity-show">
+          <div class="commodity-wrapper separate-line wrapper">
+              <div class="commodity-img">
+                <a href="web/exploration/76" target="_blank">
+                    <img data-original="http://cdn.xianbei.cc/exploration/76/QGiQt.jpg" src="http://cdn.xianbei.cc/exploration/76/QGiQt.jpg" alt="菊乃井（本店）">
+                  </a>
+                  <div class="discount-cover">
+                  </div>
+              </div>
+              <div class="introduction">
+                  <div class="introduction-head">
+                      <h1 onclick="javascript:window.open('web/exploration/76');">菊乃井（本店）<span>&nbsp;Kikunoi</span></h1>
+                      <div class="mack">
+                          <i>美食</i>
+                      </div>
+                      <div class="stars">
+                          <span class="stars-position9"></span>
+                          <i>9.9</i>
+                      </div>
+                      <div>
+                          <span>东山区下河原通八坂鸟居前下下河原町459</span>
+                      </div>
+                  </div>
+                  <div class="introduction-foot">
+                      <p>怀石料理菊乃井的总店位于京都东山之麓，相传丰臣秀吉的第一位妻子将「菊水之井」的井水用来泡茶，从井里汩汩冒出的水就像盛开的菊花一般，因此菊乃井的祖祖辈辈都非常爱护这口井，其后更是开始使用这口井的井水来做菜煮饭。菊乃井这个名字以此井来命名的。</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="commodity-show">
+          <div class="commodity-wrapper separate-line wrapper">
+              <div class="commodity-img">
+                <a href="web/exploration/31" target="_blank">
+                    <img data-original="http://cdn.xianbei.cc/exploration/31/2OWKS.jpg" src="http://cdn.xianbei.cc/exploration/31/2OWKS.jpg" alt="银座小十">
+                  </a>
+                  <div class="discount-cover">
+                  </div>
+              </div>
+              <div class="introduction">
+                  <div class="introduction-head">
+                      <h1 onclick="javascript:window.open('web/exploration/31');">银座小十<span>&nbsp;Ginza kojyu</span></h1>
+                      <div class="mack">
+                          <i>美食</i>
+                      </div>
+                      <div class="stars">
+                          <span class="stars-position9"></span>
+                          <i>9.8</i>
+                      </div>
+                      <div>
+                          <span>中央区银座5-4-8Carioca building 4F </span>
+                      </div>
+                  </div>
+                  <div class="introduction-foot">
+                      <p>米其林三星，海鲜是每天早上从各地直送，蔬菜均为无农药菜，经精细加工和厨师了得的厨艺，成为美味优质的菜肴，厨师将每一道食物本身的味道发挥到极致，蘸不蘸酱料都无比鲜美，店内则用简约的日本和风打造了传统的日本家庭氛围。 </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="commodity-show">
+          <div class="commodity-wrapper separate-line wrapper">
+              <div class="commodity-img">
+                <a href="web/exploration/29" target="_blank">
+                    <img data-original="http://cdn.xianbei.cc/exploration/29/NgO0U.jpg" src="http://cdn.xianbei.cc/exploration/29/NgO0U.jpg" alt="寿司大">
+                  </a>
+                  <div class="discount-cover">
+                  </div>
+              </div>
+              <div class="introduction">
+                  <div class="introduction-head">
+                      <h1 onclick="javascript:window.open('web/exploration/29');">寿司大<span>&nbsp;Sushidai</span></h1>
+                      <div class="mack">
+                          <i>美食</i>
+                      </div>
+                      <div class="stars">
+                          <span class="stars-position9"></span>
+                          <i>9.6</i>
+                      </div>
+                      <div>
+                          <span>中央区筑地5-2-1筑地市场内6号馆</span>
+                      </div>
+                  </div>
+                  <div class="introduction-foot">
+                      <p>寿司大位于东京著名的筑地市场内，和隔壁的大和寿司号称筑地两大寿司店，店内有4000日元和2600日元两种套餐供选择，寿司分量不大，但可以吃到较多种类。排队时间较长，建议早点去。 </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="commodity-show">
+          <div class="commodity-wrapper separate-line wrapper">
+              <div class="commodity-img">
+                <a href="web/exploration/26" target="_blank">
+                    <img data-original="http://cdn.xianbei.cc/exploration/26/LtdyZ.jpg" src="http://cdn.xianbei.cc/exploration/26/LtdyZ.jpg" alt="矶丸水产(新宿三丁目店)">
+                  </a>
+                  <div class="discount-cover">
+                  </div>
+              </div>
+              <div class="introduction">
+                  <div class="introduction-head">
+                      <h1 onclick="javascript:window.open('web/exploration/26');">矶丸水产(新宿三丁目店)<span>&nbsp; Isomarusuisan</span></h1>
+                      <div class="mack">
+                          <i>美食</i>
+                      </div>
+                      <div class="stars">
+                          <span class="stars-position9"></span>
+                          <i>9.5</i>
+                      </div>
+                      <div>
+                          <span>新宿区新宿3-17-13</span>
+                      </div>
+                  </div>
+                  <div class="introduction-foot">
+                      <p>矶丸水产是一家日本的海鲜烧烤连锁店，在新宿，池袋，上野有很多连锁店。各种日本插画，大字报，海报布满店内，比一般居酒屋更具气氛。</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="commodity-show">
+          <div class="commodity-wrapper separate-line wrapper">
+              <div class="commodity-img">
+                <a href="web/exploration/67" target="_blank">
+                    <img data-original="http://cdn.xianbei.cc/exploration/67/2uGEo.jpg" src="http://cdn.xianbei.cc/exploration/67/2uGEo.jpg" alt="机器人餐厅">
+                  </a>
+                  <div class="discount-cover">
+                  </div>
+              </div>
+              <div class="introduction">
+                  <div class="introduction-head">
+                      <h1 onclick="javascript:window.open('web/exploration/67');">机器人餐厅<span>&nbsp;Robot Restaurant</span></h1>
+                      <div class="mack">
+                          <i>美食</i>
+                      </div>
+                      <div class="stars">
+                          <span class="stars-position9"></span>
+                          <i>9.5</i>
+                      </div>
+                      <div>
+                          <span>新宿区歌舞伎町1-7-1 新宿Robot大楼B2</span>
+                      </div>
+                  </div>
+                  <div class="introduction-foot">
+                      <p>以性感造型和巨型机器人舞台的视觉盛宴为卖点的餐厅，类似美国拉斯维加斯的高级赌场秀，但其实质是餐厅。可以在在华丽装饰和极具视觉冲击力的舞台包围下感受新宿的夜之魅力。</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="commodity-show">
+          <div class="commodity-wrapper separate-line wrapper">
+              <div class="commodity-img">
+                <a href="web/exploration/68" target="_blank">
+                    <img data-original="http://cdn.xianbei.cc/exploration/68/GHGHq.jpg" src="http://cdn.xianbei.cc/exploration/68/GHGHq.jpg" alt="乔尔·侯布匈 ">
+                  </a>
+                  <div class="discount-cover">
+                  </div>
+              </div>
+              <div class="introduction">
+                  <div class="introduction-head">
+                      <h1 onclick="javascript:window.open('web/exploration/68');">乔尔·侯布匈 <span>&nbsp;Le Chateau de Joël Robuchon</span></h1>
+                      <div class="mack">
+                          <i>美食</i>
+                      </div>
+                      <div class="stars">
+                          <span class="stars-position9"></span>
+                          <i>9.5</i>
+                      </div>
+                      <div>
+                          <span>目黑区三田1-13-1</span>
+                      </div>
+                  </div>
+                  <div class="introduction-foot">
+                      <p>乔尔·侯布匈是目前全世界旗下餐厅米其林星级加总最多的法国名厨，亦是最年轻取得米其林三星的名厨。</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="commodity-show" style="border-bottom:0">
+          <div class="commodity-wrapper separate-line wrapper">
+              <div class="commodity-img">
+                <a href="web/exploration/84" target="_blank">
+                    <img data-original="http://cdn.xianbei.cc/exploration/84/LW7vh.jpg" src="http://cdn.xianbei.cc/exploration/84/LW7vh.jpg" alt="星巴克（太宰府天满宫表参道店）">
+                  </a>
+                  <div class="discount-cover">
+                  </div>
+              </div>
+              <div class="introduction">
+                  <div class="introduction-head">
+                      <h1 onclick="javascript:window.open('web/exploration/84');">星巴克（太宰府天满宫表参道店）<span>&nbsp;Starbucks</span></h1>
+                      <div class="mack">
+                          <i>美食</i>
+                      </div>
+                      <div class="stars">
+                          <span class="stars-position9"></span>
+                          <i>9.5</i>
+                      </div>
+                      <div>
+                          <span>太宰府市宰府3-2-43</span>
+                      </div>
+                  </div>
+                  <div class="introduction-foot">
+                      <p>这家星巴克概念店是由日本建筑大师隈研吾亲自设计的，浓浓的禅意和日本风宛如美术馆一般，运用木材，泥砖，竹子，石板，玻璃，纸等，又结合了水，光，空气，外表看似柔弱但却能让人感受到传统温馨的美感，可以说是一个令人惊艳的艺术作品。</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <div class="more">
+          加载更多
+      </div>
+      <input id="isOnclick" type="hidden" value="false">
+      <ul id="spinners" class="text-center">
+        <li class="three-bounce ">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </li>
+      </ul>
+  </article>
+</article>
+<!--#include file="partial_html/footer.html" -->

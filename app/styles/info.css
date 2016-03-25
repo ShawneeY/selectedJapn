@@ -1,0 +1,425 @@
+body {
+    background: whitesmoke;
+}
+
+.header-placeholder {
+    height: 50px;
+}
+
+/*顶部轮播图*/
+#slide-img,#slide-img li
+{
+    width:100%;
+    height:200px;
+    overflow:hidden;
+}
+
+#slide-img li img
+{
+    height:200px;
+    min-width:100%;
+}
+
+#slide-img .owl-controls
+{
+    position: absolute;
+    bottom: 12px;
+    width: 100%;
+}
+
+.top-banner
+{
+    padding:0 12px;
+    border:1px solid #EEE;
+    background:#fff;
+}
+
+/*题目*/
+.product-title
+{
+    padding-top:14px;
+    font-size:16px;
+    color:#666;
+}
+
+.product-price
+{
+    font-size:24px;
+    color:#ff5a5f;
+    font-weight:bolder;
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+/*标签*/
+.product-labels li
+{
+    float:left;
+    font-size:10px;
+    padding:1px 5px;
+    margin-right:4px;
+    border:1px solid #FF5A5F;
+    color:#FF5A5F;
+}
+
+.product-labels li:first-child
+{
+
+    color:#FFF;
+    background-color:#FF5A5F;
+
+}
+
+/*描述文字*/
+.description
+{
+    padding:10px 10px;
+    color:#777;
+}
+
+.middel-banner
+{
+    padding:8px 12px;
+    background:#fff;
+    color:#BBB;
+    font-size:12px;
+}
+
+.tab
+{
+    margin:25px 0;
+    overflow:hidden;
+}
+
+.tab li
+{
+    float:left;
+    padding:8px 30px;
+    border:1px solid #EEE;
+}
+
+.tab li a
+{
+    color:#999;
+}
+
+
+.tab li.action
+{
+    background-color:#FF5A5F;
+    border:none;
+}
+
+.tab li.action a
+{
+    color:#FFF;
+}
+
+/*详细*/
+.detail
+{
+    background-color:#fff;
+    margin-top:10px;
+    padding-left:15px;
+
+}
+
+/*详细 标题*/
+.panel-head
+{
+    font-size:16px;
+    padding:14px 0;
+}
+
+.panel-head i
+{
+    color:#ff5a5f;
+}
+
+a .panel-head
+{
+    color:#777;
+}
+
+/*详细 内容*/
+.panel-collapse
+{
+    color:#666;
+    padding-bottom:15px;
+}
+
+.collapse-hr
+{
+    border-top:1px solid #EEE;
+    padding-bottom:14px;
+}
+
+
+/*导游信息*/
+.guide-info
+{
+    float:left;
+    margin-right:20px;
+
+}
+
+/*头像*/
+.guide-info .avatar
+{
+    width:70px;
+}
+
+.guide-info .avatar img
+{
+    width:70px;
+    height:70px;
+    float:left;
+    max-width: 100%;
+}
+
+.guide-info .item
+{
+    width:220px;
+    float:left;
+    padding-top:10px;
+    padding-left:20px;
+}
+
+.guide-info .item .nickname
+{
+    font-size:16px;
+}
+
+/*时间轴*/
+.route-line
+{
+
+}
+
+.route-line li
+{
+    border-left: 1px solid #aaa;
+    padding-left: 26px;
+    padding-bottom: 25px;
+    padding-top: 5px;
+    color: #333;
+    position: relative;
+}
+
+.route-line li .route-icon
+{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    top: 0;
+    left: -15px;
+    background-color:#fff;
+    font-size:16px;
+    text-align: center;
+    color:#ff5a5f;
+}
+
+.product-form .form-item
+{
+    border-radius: 0px;
+    margin-top:15px;
+}
+
+.has-feedback-left {
+    position: relative;
+}
+
+.has-feedback-left .controls {
+    padding-top:4px;
+    padding-bottom:4px;
+}
+
+.has-feedback-left .form-control-feedback
+{
+    top: 6px;
+    left: 0px;
+    width:65px;
+    text-align:left;
+    font-size:13px;
+    color:#777;
+}
+
+.has-feedback-left .form-control
+{   height: 100%;
+    padding-left:95px;
+}
+
+.bottom-control
+{
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}
+
+/*按钮*/
+.back-btn,.book-btn
+{
+    text-align:center;
+    float:left;
+    height:45px;
+    line-height:45px;
+    color:#fff;
+    font-size:18px;
+}
+
+.back-btn
+{
+    width:35%;
+    background-color:#AAA;
+}
+
+.book-btn
+{
+    width:65%;
+
+    background-color:#FF5A5F;
+}
+
+#book-model .modal-content
+{
+    border-radius: 0px;
+}
+
+#book-model .book-model-head
+{
+    padding:15px 0px;
+    font-size:15px;
+    border-bottom:1px solid #CCC;
+    padding:13px 20px 13px 20px;
+
+}
+
+.book-form
+{
+    padding: 0px 13.5px 0px 13.5px;
+}
+
+.book-info-top
+{
+    margin-bottom:13px;
+}
+
+
+.submit-btn
+{
+    margin-top:35px;
+    width:100%;
+    border-radius: 6px;
+    height: 3.6rem;
+}
+
+.sence img
+{
+    width:65%;
+    float:left;
+    margin: 5px 5px;
+}
+
+.detail img
+{
+    max-width:80%;
+}
+
+.error-m
+{
+    text-align:right;
+    font-size:12px;
+}
+
+#beginDate-div
+{
+    /*border-top:1px solid #DDD;
+    border-bottom:1px solid #DDD;*/
+}
+
+.date-price-banner
+{
+    padding:6px 12px;
+    border:1px dotted #CCC;
+    font-size:12px;
+    color:#777;
+}
+
+.date-price-banner .it-product-price
+{
+    color:#ff5a5f;
+}
+
+
+.book-info-top-2
+{
+    margin-top:16px;
+    margin-bottom:10px;
+}
+
+.book-info-top .book-info-top-2
+{
+    color:#888;
+}
+
+.form-group-mb{
+    height:45px;
+}
+
+
+.plus1 {
+  border-left: none;
+  font-weight: bold;
+}
+ .plus1, .minus1,.sum_man{
+  float:left;
+  line-height: 32px;
+  width: 35px;
+  height: 32px;
+  color: #aaa;
+  text-align: center;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.error-m {
+  margin-top: -34px;
+  width: 100px;
+  float: right;
+}
+.product-models
+{
+    margin-left: 10px;
+}
+
+.product-model
+{
+    display: inline-block !important;
+    padding:2px 10px;
+    border:1px solid #666;
+    font-size:13px;
+    color:#666;
+    background:#FFF;
+    margin-right:5px;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+.product-models .select
+{
+    border:2px solid #FF5A5F;
+    color:#FF5A5F;
+    cursor: pointer;
+}
+.specification-price{
+    float: left;
+    line-height: 33px;
+    margin-left: 10px;
+    color: #ff5a5f;
+}
+.price_unit{
+    color: #999;
+    font-size: 13px;
+    margin-left:5px;
+    text-align: right;
+}
