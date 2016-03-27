@@ -1,0 +1,388 @@
+<!--#include file="partial_html/header-desktop.html" -->
+
+  <div style="background:url('http://cdn.xianbei.cc/pc/city/banner/dj.jpg') no-repeat 0% 80%;background-size: cover;height:400px;width:100%;position:relative;margin-bottom:25px;">
+      <div class="city_div">
+          <div class="list_city_info">
+                东京
+          </div>
+          <div class="city_info-count">
+            36位导游&nbsp;&nbsp;20项当地服务
+          </div>
+      </div>
+
+      <div class="city_nav_layar">
+      </div>
+      <div class="city_nav_content">
+        <div class="city_nav_content-inner">
+          <ul class="city-nav">
+            <li>
+              <a href="guide/list?city=13">当地导游</a>
+            </li>
+
+            <li class="cur">
+              <a href="product/list?city=13">当地服务</a>
+            </li>
+
+            <div class="show-city" onclick="showCity();">
+
+            <div style="height:50px"></div>
+              <div class="div_11" style="display: none;"> <div class="citylines"></div><div class="div_2" style="border-top: 0px solid #e9e9e9;"><div class="city" onclick="toPproduct(13)"><span style="color:#666666">东京</span></div><div class="city center" onclick="toPproduct(40)"><span style="color:#666666">富士山</span></div><div class="city" onclick="toPproduct(46)"><span style="color:#666666">大阪</span></div> </div><div class="div_2"><div class="city" onclick="toPproduct(45)"><span style="color:#666666">京都</span></div><div class="city center" onclick="toPproduct(50)"><span style="color:#666666">奈良</span></div><div class="city" onclick="toPproduct(1)"><span style="color:#666666">北海道</span></div> </div><div class="div_2"><div class="city" onclick="toPproduct(69)"><span style="color:#666666">冲绳</span></div><div class="city center" onclick="toPproduct(31)"><span style="color:#666666">箱根</span></div><div class="city" onclick="toPproduct(48)"><span style="color:#666666">神户</span></div> </div><div class="div_2"><div class="city" onclick="toPproduct(42)"><span style="color:#666666">名古屋</span></div><div class="city center" onclick="toPproduct(76)"><span style="color:#666666">九州</span></div><div class="city"><span style="color:#666666">&nbsp;</span></div></div><div class="citylines"></div><div style="text-align: center;height: 45px;line-height: 45px;border-top: 1px solid #e9e9e9;">不确定去哪？<a href="plan/create" style="color:#ff5a5f">预约定制游</a></div></div>
+            </div>
+          </ul>
+        </div>
+
+      </div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="container sj-location-listing"><!-- TODO -->
+      <div id="middle" class="row">
+      <input id="city" value="13" type="hidden">
+      <input id="labeId" value="" type="hidden">
+
+        <ul class="label-list">
+            <li class="">
+              <a href="product/list?labels=">全部</a>
+            </li>
+
+            <li class="cur">
+              <a href="product/list?labels=&amp;city=13">东京</a>
+            </li>
+            <li class="">
+              <a href="product/list?labels=&amp;city=40">富士山</a>
+            </li>
+            <li class="">
+              <a href="product/list?labels=&amp;city=46">大阪</a>
+            </li>
+            <li class="">
+              <a href="product/list?labels=&amp;city=45">京都</a>
+            </li>
+            <li class="">
+              <a href="product/list?labels=&amp;city=50">奈良</a>
+            </li>
+            <li class="">
+              <a href="product/list?labels=&amp;city=1">北海道</a>
+            </li>
+            <li class="">
+              <a href="product/list?labels=&amp;city=69">冲绳</a>
+            </li>
+            <li class="">
+              <a href="product/list?labels=&amp;city=76">九州</a>
+            </li>
+            <li class="">
+              <a href="product/list?labels=&amp;city=31">箱根</a>
+            </li>
+            <li class="">
+              <a href="product/list?labels=&amp;city=42">名古屋</a>
+            </li>
+            <div class="clearfix" style="height:10px"></div>
+
+
+          <li class="cur">
+            <a href="product/list?city=13">全部</a>
+          </li>
+
+          <li class="">
+            <a href="product/list?labels=1&amp;city=13">樱花季</a>
+          </li>
+          <li class="">
+            <a href="product/list?labels=3&amp;city=13">包车畅游</a>
+          </li>
+          <li class="">
+            <a href="product/list?labels=8&amp;city=13">机场接送</a>
+          </li>
+          <li class="">
+            <a href="product/list?labels=12&amp;city=13">主题游</a>
+          </li>
+          <li class="">
+            <a href="product/list?labels=15&amp;city=13">当地玩乐</a>
+          </li>
+          <li class="">
+            <a href="product/list?labels=16&amp;city=13">仙贝商旅</a>
+          </li>
+          <li class="">
+            <a href="product/list?labels=35&amp;city=13">便捷旅途</a>
+          </li>
+
+        </ul>
+
+        <ul class="product-list">
+          <li class="product-item">
+
+              <div class="banner-img">
+                <a href="product/177?city=13">
+                  <img data-original="http://img.xianbei.cc/product/177/NI8H6.jpg" src="http://img.xianbei.cc/product/177/NI8H6.jpg">
+                </a>
+
+              </div>
+              <div class="text">
+
+                <div class="title"><a href="product/177?city=13">便捷旅途 | 日本无线WIFI（4G）特价租赁</a></div>
+
+                <div class="clearfix"></div>
+
+                <div class="product-price-box">
+                  <div class="product-price">
+                      <span style="font-size:16px"></span>15<span style="font-size:16px">元/天</span>
+                  </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+
+
+                <div class="product-labels
+
+                 ">
+
+                </div>
+
+
+              </div>
+
+            <div class="clearfix"></div>
+          </li>
+          <li class="product-item">
+
+              <div class="banner-img">
+                <a href="product/179?city=13">
+                  <img data-original="http://img.xianbei.cc/product/179/uP5np.jpg" src="http://img.xianbei.cc/product/179/uP5np.jpg">
+                </a>
+
+              </div>
+              <div class="text">
+
+                <div class="title"><a href="product/179?city=13">樱花季 | 东京赏樱悦目一日游</a></div>
+
+                <div class="clearfix"></div>
+
+                <div class="product-price-box">
+                  <div class="product-price">
+                      <span style="font-size:16px"></span>2049<span style="font-size:16px">元/车</span>
+                  </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+
+
+                <div class="product-labels
+
+                 ">
+
+                </div>
+
+
+              </div>
+
+            <div class="clearfix"></div>
+          </li>
+          <li class="product-item">
+
+              <div class="banner-img">
+                <a href="product/167?city=13">
+                  <img data-original="http://img.xianbei.cc/product/167/V7KFu.jpg" src="http://img.xianbei.cc/product/167/V7KFu.jpg">
+                </a>
+
+              </div>
+              <div class="text">
+
+                <div class="title"><a href="product/167?city=13">奢华游丨日本轻井泽华丽2日游</a></div>
+
+                <div class="clearfix"></div>
+
+                <div class="product-price-box">
+                  <div class="product-price">
+                      <font style="color:#AAA;">定制</font>
+                  </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+
+
+                <div class="product-labels
+
+                 ">
+
+                </div>
+
+
+              </div>
+
+            <div class="clearfix"></div>
+          </li>
+          <li class="product-item">
+
+              <div class="banner-img">
+                <a href="product/166?city=13">
+                  <img data-original="http://img.xianbei.cc/product/166/OEV3t.jpg" src="http://img.xianbei.cc/product/166/OEV3t.jpg">
+                </a>
+
+              </div>
+              <div class="text">
+
+                <div class="title"><a href="product/166?city=13">商务考察 | 扶桑企业文化考察7天6晚之猴年特集</a></div>
+
+                <div class="clearfix"></div>
+
+                <div class="product-price-box">
+                  <div class="product-price">
+                      <span style="font-size:16px"></span>8700<span style="font-size:16px">元/人</span>
+                  </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+
+
+                <div class="product-labels
+
+                   product-labels-2
+                 ">
+                    包车
+                </div>
+
+
+              </div>
+
+            <div class="clearfix"></div>
+          </li>
+          <li class="product-item">
+
+              <div class="banner-img">
+                <a href="product/41?city=13">
+                  <img data-original="http://img.xianbei.cc/product/41/yO3im.jpg" src="http://img.xianbei.cc/product/41/yO3im.jpg">
+                </a>
+
+              </div>
+              <div class="text">
+
+                <div class="title"><a href="product/41?city=13">接送机丨茨城机场 - 东京市内 单程</a></div>
+
+                <div class="clearfix"></div>
+
+                <div class="product-price-box">
+                  <div class="product-price">
+                      <span style="font-size:16px"></span>2199<span style="font-size:16px">元/车</span>
+                  </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+
+
+                <div class="product-labels
+
+                   product-labels-2
+                 ">
+                    包车
+                </div>
+
+
+              </div>
+
+            <div class="clearfix"></div>
+          </li>
+          <li class="product-item">
+
+              <div class="banner-img">
+                <a href="product/164?city=13">
+                  <img data-original="http://img.xianbei.cc/product/164/PAZOS.png" src="http://img.xianbei.cc/product/164/PAZOS.png">
+                </a>
+
+              </div>
+              <div class="text">
+
+                <div class="title"><a href="product/164?city=13">投资游丨东京看房自由行</a></div>
+
+                <div class="clearfix"></div>
+
+                <div class="product-price-box">
+                  <div class="product-price">
+                      <font style="color:#AAA;">定制</font>
+                  </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+
+
+                <div class="product-labels
+
+                   product-labels-2
+                 ">
+                    包车
+                </div>
+
+
+              </div>
+
+            <div class="clearfix"></div>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+
+        <!--分页-->
+        <div class="text-center">
+
+
+
+
+<ul class="pagination">
+  <li class="disabled">
+      <!--
+      <span class="label-default" style="color: #666666;"> 首页 </span>
+       -->
+  </li>
+  <li class="disabled">
+      <!--
+      <span class="label-default" style="color: #666666;"> &lt; </span>
+       -->
+  </li>
+
+  <!--  -->
+  <!--  -->
+  <!--  -->
+
+      <li class="hidden-xs active">
+        <a href="/product/list?city=13&amp;page.pn=1"> 1 </a>
+      </li>
+          <li class="hidden-xs">
+            <a href="/product/list?city=13&amp;page.pn=2"> 2 </a>
+          </li>
+          <li class="hidden-xs">
+            <a href="/product/list?city=13&amp;page.pn=3"> 3 </a>
+          </li>
+          <li class="hidden-xs">
+            <a href="/product/list?city=13&amp;page.pn=4"> 4 </a>
+          </li>
+
+  <li class="visible-xs-inline">
+    <span style="padding: 6px 12px; height: 34px;">
+      <select onchange="javascript:window.location.href=this.value;" style="-webkit-appearance: none; background-color: inherit; color: inherit; border: none">
+              <option selected="selected" value="/product/list?city=13&amp;page.pn=1">1/4</option>
+              <option value="/product/list?city=13&amp;page.pn=2">2/4</option>
+              <option value="/product/list?city=13&amp;page.pn=3">3/4</option>
+              <option value="/product/list?city=13&amp;page.pn=4">4/4</option>
+      </select>
+    </span>
+  </li>
+  <li class="">
+      <a rel="next" href="/product/list?city=13&amp;page.pn=2">  &gt;</a>
+  </li>
+  <li class="">
+      <a rel="next" href="/product/list?city=13&amp;page.pn=4"> 末页 </a>
+  </li>
+</ul>
+<link rel="stylesheet" href="res/css/page.css">
+
+        </div>
+
+        <!--middle-->
+      </div>
+    </div>
+
+
+
+<!--#include file="partial_html/footer-desktop.html" -->
+

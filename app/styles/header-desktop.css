@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+body {
+  font-family: "微软雅黑","Meiryo","Hiragino Sans GB","STHeiti", "华文细黑",
+    "Microsoft YaHei", SimHei, "Helvetica Neue", Helvetica, Arial,
+  sans-serif;
+  margin: 0;
+  background-color:#f5f5f5;
+  font-weight: normal;
+}
+
+img{
+  border:none;
+}
+.clear{
+  clear:both;
+}
+.top{
+    width: 100%;
+    background-color: #fff;
+}
+.head{
+    width: 1100px;
+    height: 80px;
+    margin: 0 auto;
+    line-height: 80px;
+}
+.head .icon{
+  float:left;
+  display: block;
+  margin-top: 15px;
+}
+.head .icon img{
+  display: block;
+  cursor: pointer;
+}
+.head .h_menu{
+  float:right;
+}
+.head .h_menu .link{
+  float: left;
+  padding: 0px 20px;
+    font-size: 14px;
+    color: #888;
+}
+.head .h_menu a,.head .h_menu a:link,.head .h_menu a:visited,.head .h_menu a:hover{
+  color: #888;
+  text-decoration:none;
+}
+.user-pw-input {
+    margin: 0 auto 20px auto;
+    width: 60%;
+}
+.user-pw-input {
+    margin: 0 auto 20px auto;
+    width: 60%;
+}
+.user-pw-btn {
+    margin: 0 auto;
+    width: 30%;
+}
+.modal-body fieldset{
+  border:0px !important;
+}
+
+.top .head .h_menu .img-header{
+  width: 40px;
+  height: 80px;
+  padding-top: 25px;
+}
+.top .head .h_menu .img-header img{
+    display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+}
+.top .head .h_menu .img-header .triangle{
+  float: right;
+    width: 0px;
+    height: 0px;
+    border-bottom: 5px solid #CCC;
+    border-left: 5px solid transparent;
+}2

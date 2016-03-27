@@ -73,6 +73,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -89,12 +90,16 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/jquery.window.js"></script>
     <script src="scripts/owl.carousel.js"></script>
+
     <script src="scripts/touchSlide.js"></script>
+    <script src="/bower_components/jquery-icheck/icheck.min.js"></script>
+    <script src="scripts/common.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
     <script>
@@ -103,6 +108,17 @@
       interval : 3000,
       direction : 0,
       autoplay : true,
+      mousewheel : false,
+      mouse : true,
+      fullsize : true
+    });
+    </script>
+    <script>
+      var carousel_mobile = new TouchSlider('slider', {
+      duration : 800,
+      interval : 3000,
+      direction : 0,
+      autoplay : false,
       mousewheel : false,
       mouse : true,
       fullsize : true

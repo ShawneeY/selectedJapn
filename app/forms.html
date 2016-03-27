@@ -1,36 +1,226 @@
 <!--#include file="partial_html/header.html" -->
 
 
-<div class="SJ-forms-bg-img">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 bg-color">
-        <p class="lead">在线预约</p>
-        <div class="row">
-          <div class="col-xs-3">
-            <p>服务类型</p>
-          </div>
-          <div class="col-xs-3">
-            <input type="checkbox" name="" value="" placeholder=""> 机场接送
-          </div>
-          <div class="col-xs-3">
-            <input type="checkbox" name="" value="" placeholder=""> 包车畅游
-          </div>
-          <div class="col-xs-3">
-            <input type="checkbox" name="" value="" placeholder=""> 导游地接
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <input type="text" placeholder="目的地城市">
 
+<div class="create">
+    <div class="mask"></div>
+    <div class="mask_content">
+      <div class="title"></div>
+      <div class="title_content">
+        <div class="bg"></div>
+      </div>
+      <div class="scroll">
+        <div class="page_content">
+        <form action="plan/ct" method="post" id="form_plan">
+        <input type="hidden" id="needCode" class="insum" value="1">
+          <ul id="slider" >
+            <li>
+              <div class="page">
+                <div class="page_title">在线预约</div>
+                <div class="tr">
+                  <div class="th type">服务类型</div>
+                    <div class="td">
+                      <div class="icheckbox_square-red">
+                        <input type="checkbox" name="service" class="checkedTrue" value="AIR" style="position: absolute; display: block; width: 18px; height: 18px; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);">
+                        <ins class="iCheck-helper"></ins>
+                      </div>&nbsp;机场接送&nbsp;&nbsp;&nbsp;
+                      <div class="icheckbox_square-red" >
+                        <input type="checkbox" name="service" class="checkedTrue" value="AIR" style="position: absolute; display: block; width: 18px; height: 18px; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);">
+                        <ins class="iCheck-helper"></ins>
+                      </div>&nbsp;机场接送&nbsp;&nbsp;&nbsp;
+                      <div class="icheckbox_square-red">
+                        <input type="checkbox" name="service" class="checkedTrue" value="AIR" style="position: absolute; display: block; width: 18px; height: 18px; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);">
+                        <ins class="iCheck-helper"></ins>
+                      </div>&nbsp;机场接送&nbsp;&nbsp;&nbsp;
+                    </div>
+                  <div class="error" id="service_warn">
+                    请选择服务类型
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="service_city">
+                    <div class="ms-sel-ctn">
+                      <input type="text" class="large" id="city" placeholder="目的地城市" readonly="readOnly">
+                    </div>
+                    <div class="right icon"></div>
+                  </div>
+                  <div class="dest" style="display: none">
+                    <div class="div_2">
+                      <div class="city h" onclick="chooseCity(this)" name="东京" destid="13">
+                        <span style="color: #666666">东京</span>
+                      </div>
+                      <div class="city h" onclick="chooseCity(this)" name="富士山" destid="40">
+                        <span style="color: #666666">富士山</span>
+                      </div>
+                      <div class="city h" onclick="chooseCity(this)" name="大阪" destid="46">
+                        <span style="color: #666666">大阪</span>
+                      </div>
+                      <div class="city h " style="border-right: 0px solid #fff;" onclick="chooseCity(this)" name="京都" destid="45">
+                        <span style="color: #666666">京都</span>
+                      </div>
+                      <div class="city h" onclick="chooseCity(this)" name="奈良" destid="50">
+                        <span style="color: #666666">奈良</span>
+                      </div>
+                      <div class="city h" onclick="chooseCity(this)" name="北海道" destid="1">
+                        <span style="color: #666666">北海道</span>
+                      </div>
+                      <div class="city h" onclick="chooseCity(this)" name="冲绳" destid="69">
+                        <span style="color: #666666">冲绳</span>
+                      </div>
+                      <div class="city h " style="border-right: 0px solid #fff;" onclick="chooseCity(this)" name="箱根" destid="31">
+                        <span style="color: #666666">箱根</span>
+                      </div>
+                      <div class="city h" onclick="chooseCity(this)" name="神户" destid="48">
+                        <span style="color: #666666">神户</span>
+                      </div>
+                      <div class="city h" onclick="chooseCity(this)" name="名古屋" destid="42">
+                        <span style="color: #666666">名古屋</span>
+                      </div>
+                      <div class="city h" onclick="chooseCity(this)" name="九州" destid="76">
+                        <span style="color: #666666">九州</span>
+                      </div>
+                      <div class="city h " style="border-right: 0px solid #fff;" onclick="chooseCity(this)" name="其他" destid="218">
+                        <span style="color: #666666">其他</span>
+                      </div>
+                      <div class="xb-btn-m-org ok">确定</div>
+                    </div>
+                  </div>
+                  <div class="error" id="city_warn">
+                    请选择您想去的城市
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="begin_date">
+                    <input type="text" class="large" placeholder="出发日期" readonly="readonly" id="beginDate" name="courses[0].start">
+                    <div class="right icon"></div>
+                    <div class="error" id="beginDate_warn">
+                      请选择您的出发日期
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="td">
+                    <input type="text" class="small" placeholder="游玩天数" id="playDay" name="days">
+                    <div class="right day">天</div>
+                    <div class="error" id="playDay_warn">
+                      请选择您的游玩天数
+                    </div>
+                    <div class="menu menu_left" onselectstart="return false">
+                      <div class="add a">
+                        <i class="fa  fa-plus gray a"></i>
+                      </div>
+                      <div class="del a">
+                        <i class="fa fa-minus gray a"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <input type="text" class="small" placeholder="人数" id="num" name="mateNumber">
+                    <div class="right num">位</div>
+                    <div class="error num" id="num_warn">
+                      请选择您的出行人数
+                    </div>
+                    <div class="menu menu_right plugin" onselectstart="return false">
+                      <div class="add a">
+                        <i class="fa  fa-plus gray a"></i>
+                      </div>
+                      <div class="del a">
+                        <i class="fa fa-minus gray a"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="th type">您还需要</div>
+                  <div class="td">
+                        <div class="icheckbox_square-red">
+                          <input type="checkbox" name="service" class="checkedFalse" value="HOTEL" style="position: absolute; display: block; width: 18px; height: 18px; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);">
+                          <ins class="iCheck-helper"></ins>
+                        </div>
+                        &nbsp;酒店代订&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="icheckbox_square-red">
+                          <input type="checkbox" name="service" class="checkedFalse" value="HOTEL" style="position: absolute; display: block; width: 18px; height: 18px; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);">
+                          <ins class="iCheck-helper"></ins>
+                        </div>
+                        &nbsp;酒店代订&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="icheckbox_square-red">
+                          <input type="checkbox" name="service" class="checkedFalse" value="HOTEL" style="position: absolute; display: block; width: 18px; height: 18px; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);">
+                          <ins class="iCheck-helper"></ins>
+                        </div>
+                        &nbsp;酒店代订&nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="next nextBut">下一步</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="page" id="page2">
+              <div class="page_title">在线预约</div>
+                <div class="tr">
+                  <div class="name username">
+                    <input type="text" class="large realname" name="realName" id="realName" placeholder="您的姓名">
+                    <div class="gender">
+                      <div class="td">
+                        <div class="iradio_square-red checked" style="position: relative;"><input type="radio" name="gender" checked="" value="M" style="position: absolute; top: -10%; left: -10%; display: block; width: 120%; height: 120%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -10%; left: -10%; display: block; width: 120%; height: 120%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>先生&nbsp;&nbsp;
+                        <div class="iradio_square-red" style="position: relative;"><input type="radio" name="gender" value="F" style="position: absolute; top: -10%; left: -10%; display: block; width: 120%; height: 120%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"><ins class="iCheck-helper" style="position: absolute; top: -10%; left: -10%; display: block; width: 120%; height: 120%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>女士
+                      </div>
+                    </div>
+                  </div>
+                  <div class="error" id="realName_warn">
+                    请输入您的姓名
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="mobile">
+                    <input type="text" class="large" name="mobile" id="mobile" placeholder="手机号码（支持中国大陆和日本）">
+                  </div>
+                  <div class="error" id="mobile_warn">
+                    请输入手机号
+                  </div>
+                </div>
+                <div class="tr">
+                  <textarea class="land" name="note" placeholder="备注" id="remark"></textarea>
+                </div>
+
+                <div class="tr">
+                  <div class="prev">上一步</div>
+                  <div class="next page2" id="submit">下一步</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="page" id="page3">
+                <div class="tr">
+                  <div class="look"></div>
+                </div>
+                <div class="tr t1">
+                  您的需求已经提交成功。
+                </div>
+                <div class="tr t2">
+                  我们将24小时内通过电话联系您。<br>
+                  <div style="text-align: left;padding-left: 50px;">
+                  1 北京 010-5949 2787<br>
+                  2 日本 +81 70 1592 8598
+                  </div>
+                </div>
+                <div class="tr">
+                </div>
+                <div class="tr">
+                  <a href="index.html">
+                    <div class="success">返回首页</div>
+                  </a>
+                </div>
+              </div>
+            </li>
+          <!-- Powered by TouchSlider v2.0.1  https://github.com/qiqiboy/touchslider --></ul>
+          </form>
         </div>
 
       </div>
     </div>
   </div>
-</div>
-
-
 
 <!--#include file="partial_html/footer.html" -->
 

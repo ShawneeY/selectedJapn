@@ -23,7 +23,7 @@
     margin: 10,
     responsive: {
       1200: {
-        items: 5
+        items: 3
       }
     }
   });
@@ -39,7 +39,11 @@
 
   $('.collapse').collapse()
 
+  // check box
 
+  $('.icheckbox_square-red').click(function(){
+    $(this).toggleClass('checked');
+  })
 
 
   // 闭包结束

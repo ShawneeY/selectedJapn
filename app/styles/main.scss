@@ -7,11 +7,17 @@ $icon-font-path: '../fonts/';
 //owl.css
 @import "owl.carousel.min.css";
 @import "owl.theme.default.min.css";
+@import "header-desktop.css";
 @import "mobile.css";
 @import "info.css";
 @import "index.css";
 @import "footer.css";
 @import "common.css";
+@import "create.css";
+@import "public.css";
+@import "location_listing.css";
+@import "index-main-style.css";
+@import "location-single-desktop.css";
 //end owl.css
 
 /* Index  */
@@ -1108,9 +1114,14 @@ $icon-font-path: '../fonts/';
   background-size:cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-
-  .bg-color {
-    background-color: #fff;
+  .sj-forms {
+    margin-top:200px;
+    border:1px solid #eee;
+    border-radius:5px;
+    background-color:#fff;
+    max-width: 800px;
+    margin:0 auto;
   }
+
 }
 /* End selelctedJapan-forms.scss */

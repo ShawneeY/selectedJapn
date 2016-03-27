@@ -1313,7 +1313,7 @@ h2.section span {
 .city_info-count {
     position: absolute;
     text-align: center;
-    top: 50px;
+    top: 100px;
     width: 100%;
     color: #fff;
     z-index: 100;
