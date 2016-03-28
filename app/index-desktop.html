@@ -221,3 +221,22 @@
 </div>
 
 <!--#include file="partial_html/footer-desktop.html" -->
+<script>
+        var slider = new TouchSlider('slider', {
+          duration : 800,
+          interval : 3000,
+          direction : 0,
+          autoplay : true,
+          mousewheel : false,
+          mouse : true,
+          fullsize : true
+        });
+
+        $("#prev").click(function() {
+          slider.prev();
+        });
+        $("#next").click(function() {
+          slider.next();
+        });
+
+    </script>

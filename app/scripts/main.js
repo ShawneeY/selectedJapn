@@ -28,12 +28,12 @@
     }
   });
 
-  $("#slide-img").owlCarousel({
-       autoplay: true,
-       autoplayTimeout:3000,
-       loop:true,
-       items: 1
-  });
+  // $("#slide-img").owlCarousel({
+  //      autoplay: true,
+  //      autoplayTimeout:3000,
+  //      loop:true,
+  //      items: 1
+  // });
 
   //initiate toggle outta box boostrap
 
@@ -44,7 +44,11 @@
   $('.icheckbox_square-red').click(function(){
     $(this).toggleClass('checked');
   })
+  console.log("start");
 
+  $(".picFocus").slide({ mainCell:".bd ul",effect:"left",autoPlay:true });
+
+  console.log("end");
 
   // 闭包结束
 })(jQuery);
